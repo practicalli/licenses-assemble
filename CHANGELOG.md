@@ -2,23 +2,17 @@
 All notable changes to this project will be documented in this file. This change log follows the conventions of [keepachangelog.com](http://keepachangelog.com/).
 
 ## [Unreleased]
-### Changed
-- Add a new arity to `make-widget-async` to provide a different widget shape.
-
-## [0.1.1] - 2022-02-24
-### Changed
-- Documentation on how to make the widgets.
-
-### Removed
-- `make-widget-sync` - we're all async, all the time.
-
-### Fixed
-- Fixed widget maker to keep working when daylight savings switches over.
-
-## 0.1.0 - 2022-02-24
 ### Added
-- Files from the new template.
-- Widget maker public API - `make-widget-sync`.
+### Changed
+### Removed
+### Fixed
 
-[Unreleased]: https://github.com/practicalli/licenses-assemble/compare/0.1.1...HEAD
-[0.1.1]: https://github.com/practicalli/licenses-assemble/compare/0.1.0...0.1.1
+## [0.0.1] - 2022-02-24
+### Added
+- New project with deps-new: `clojure -Tproject-new app :name practicalli/licenses-assemble`
+### Changed
+- Removed template LICENSE file
+- README description and updated tool used
+
+[Unreleased]: https://github.com/practicalli/licenses-assemble/compare/0.0.1...HEAD
+[0.0.1]: https://github.com/practicalli/licenses-assemble/compare/0.0.0...0.0.1
