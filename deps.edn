@@ -5,8 +5,7 @@
  {org.clojure/clojure {:mvn/version "1.10.3"}}
 
  :aliases
- {
-  :main
+ {:service
   {:main-opts ["-m" "practicalli.licenses-assemble"]}
 
   :greet

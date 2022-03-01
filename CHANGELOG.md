@@ -4,8 +4,8 @@ All notable changes to this project will be documented in this file. This change
 ## [Unreleased]
 ### Added
 ### Changed
-### Removed
-### Fixed
+- dev: `:service` to run web service via Clojure CLI
+
 
 ## [0.0.1] - 2022-02-24
 ### Added
