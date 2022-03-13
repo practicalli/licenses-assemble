@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file. This change
 ### Added
 ### Changed
 - dev: `:service` to run web service via Clojure CLI
+- dev: `:test/cognitect` alias to run Cognitect Labs test runner tool
 
 
 ## [0.0.1] - 2022-02-24
