@@ -7,7 +7,7 @@ All notable changes to this project will be documented in this file. This change
 - dev: `:service` to run web service via Clojure CLI
 - dev: `:test/cognitect` alias to run Cognitect Labs test runner tool
 - dev: `:test/kaocha` alias to run Kaocha test runner tool
-
+- dev: aliases used for emacs cider repl startup
 
 
 ## [0.0.1] - 2022-02-24
