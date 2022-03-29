@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file. This change
 
 ## [Unreleased]
 ### Added
+- journal: add-libs experiments
+
 ### Changed
 - dev: `:service` to run web service via Clojure CLI
 - dev: `:test/cognitect` alias to run Cognitect Labs test runner tool
