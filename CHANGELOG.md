@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file. This change
 ## [Unreleased]
 ### Added
 - journal: add-libs experiments
+- dev: clj-kondo config for http-kit
 
 ### Changed
 - dev: `:service` to run web service via Clojure CLI
