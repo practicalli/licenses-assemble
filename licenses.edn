@@ -1,0 +1,849 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Licenses of project dependencies
+;;
+;; Generated with the command
+;; clojure -X:deps list :format :edn > license.edn
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+{aero/aero
+ {:mvn/version "1.1.6",
+  :deps/manifest :mvn,
+  :parents #{[]},
+  :paths
+  ["/home/practicalli/.m2/repository/aero/aero/1.1.6/aero-1.1.6.jar"],
+  :license
+  {:name "The MIT License",
+   :url "http://opensource.org/licenses/MIT"}},
+ aleph/aleph
+ {:mvn/version "0.4.7-alpha10",
+  :deps/manifest :mvn,
+  :parents #{[]},
+  :paths
+  ["/home/practicalli/.m2/repository/aleph/aleph/0.4.7-alpha10/aleph-0.4.7-alpha10.jar"],
+  :license {:name "MIT License"}},
+ byte-streams/byte-streams
+ {:mvn/version "0.2.5-alpha2",
+  :deps/manifest :mvn,
+  :parents #{[]},
+  :paths
+  ["/home/practicalli/.m2/repository/byte-streams/byte-streams/0.2.5-alpha2/byte-streams-0.2.5-alpha2.jar"],
+  :license
+  {:name "MIT License", :url "http://opensource.org/licenses/MIT"}},
+ cheshire/cheshire
+ {:mvn/version "5.10.1",
+  :deps/manifest :mvn,
+  :parents #{[]},
+  :paths
+  ["/home/practicalli/.m2/repository/cheshire/cheshire/5.10.1/cheshire-5.10.1.jar"],
+  :license
+  {:name "The MIT License",
+   :url "http://opensource.org/licenses/MIT"}},
+ clj-tuple/clj-tuple
+ {:mvn/version "0.2.2",
+  :deps/manifest :mvn,
+  :dependents
+  [clojure.java-time/clojure.java-time
+   potemkin/potemkin
+   byte-streams/byte-streams],
+  :parents
+  #{[clojure.java-time/clojure.java-time]
+    [aleph/aleph potemkin/potemkin]
+    [byte-streams/byte-streams]},
+  :paths
+  ["/home/practicalli/.m2/repository/clj-tuple/clj-tuple/0.2.2/clj-tuple-0.2.2.jar"],
+  :license
+  {:name "MIT License", :url "http://opensource.org/licenses/MIT"}},
+ cljfx/cljfx
+ {:mvn/version "1.7.16",
+  :deps/manifest :mvn,
+  :parents #{[]},
+  :paths
+  ["/home/practicalli/.m2/repository/cljfx/cljfx/1.7.16/cljfx-1.7.16.jar"]},
+ cljfx/cljfx$jdk11
+ {:mvn/version "1.7.16",
+  :deps/manifest :mvn,
+  :dependents [cljfx/cljfx$jdk11 cljfx/cljfx],
+  :parents #{[cljfx/cljfx cljfx/cljfx$jdk11] [cljfx/cljfx]},
+  :paths
+  ["/home/practicalli/.m2/repository/cljfx/cljfx/1.7.16/cljfx-1.7.16-jdk11.jar"]},
+ cljfx/css
+ {:mvn/version "1.1.0",
+  :deps/manifest :mvn,
+  :parents #{[]},
+  :paths
+  ["/home/practicalli/.m2/repository/cljfx/css/1.1.0/css-1.1.0.jar"]},
+ clojure.java-time/clojure.java-time
+ {:mvn/version "0.3.2",
+  :deps/manifest :mvn,
+  :parents #{[]},
+  :paths
+  ["/home/practicalli/.m2/repository/clojure/java-time/clojure.java-time/0.3.2/clojure.java-time-0.3.2.jar"],
+  :license
+  {:name "MIT License", :url "http://opensource.org/licenses/MIT"}},
+ com.fasterxml.jackson.core/jackson-annotations
+ {:mvn/version "2.12.4",
+  :deps/manifest :mvn,
+  :dependents [com.fasterxml.jackson.core/jackson-databind],
+  :parents
+  #{[cheshire/cheshire
+     com.fasterxml.jackson.dataformat/jackson-dataformat-smile
+     com.fasterxml.jackson.core/jackson-databind]},
+  :paths
+  ["/home/practicalli/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.4/jackson-annotations-2.12.4.jar"],
+  :license
+  {:name "The Apache Software License, Version 2.0",
+   :url "http://www.apache.org/licenses/LICENSE-2.0.txt"}},
+ com.fasterxml.jackson.core/jackson-core
+ {:mvn/version "2.12.4",
+  :deps/manifest :mvn,
+  :dependents
+  [cheshire/cheshire
+   com.fasterxml.jackson.core/jackson-databind
+   com.fasterxml.jackson.dataformat/jackson-dataformat-cbor
+   com.fasterxml.jackson.dataformat/jackson-dataformat-smile],
+  :parents
+  #{[cheshire/cheshire]
+    [cheshire/cheshire
+     com.fasterxml.jackson.dataformat/jackson-dataformat-smile
+     com.fasterxml.jackson.core/jackson-databind]
+    [cheshire/cheshire
+     com.fasterxml.jackson.dataformat/jackson-dataformat-cbor]
+    [cheshire/cheshire
+     com.fasterxml.jackson.dataformat/jackson-dataformat-smile]},
+  :paths
+  ["/home/practicalli/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.4/jackson-core-2.12.4.jar"],
+  :license
+  {:name "The Apache Software License, Version 2.0",
+   :url "http://www.apache.org/licenses/LICENSE-2.0.txt"}},
+ com.fasterxml.jackson.core/jackson-databind
+ {:mvn/version "2.12.4",
+  :deps/manifest :mvn,
+  :dependents
+  [com.fasterxml.jackson.dataformat/jackson-dataformat-cbor
+   com.fasterxml.jackson.dataformat/jackson-dataformat-smile],
+  :parents
+  #{[cheshire/cheshire
+     com.fasterxml.jackson.dataformat/jackson-dataformat-cbor]
+    [cheshire/cheshire
+     com.fasterxml.jackson.dataformat/jackson-dataformat-smile]},
+  :paths
+  ["/home/practicalli/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.4/jackson-databind-2.12.4.jar"],
+  :license
+  {:name "The Apache Software License, Version 2.0",
+   :url "http://www.apache.org/licenses/LICENSE-2.0.txt"}},
+ com.fasterxml.jackson.dataformat/jackson-dataformat-cbor
+ {:mvn/version "2.12.4",
+  :deps/manifest :mvn,
+  :dependents [cheshire/cheshire],
+  :parents #{[cheshire/cheshire]},
+  :paths
+  ["/home/practicalli/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.12.4/jackson-dataformat-cbor-2.12.4.jar"],
+  :license
+  {:name "The Apache Software License, Version 2.0",
+   :url "http://www.apache.org/licenses/LICENSE-2.0.txt"}},
+ com.fasterxml.jackson.dataformat/jackson-dataformat-smile
+ {:mvn/version "2.12.4",
+  :deps/manifest :mvn,
+  :dependents [cheshire/cheshire],
+  :parents #{[cheshire/cheshire]},
+  :paths
+  ["/home/practicalli/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-smile/2.12.4/jackson-dataformat-smile-2.12.4.jar"],
+  :license
+  {:name "The Apache Software License, Version 2.0",
+   :url "http://www.apache.org/licenses/LICENSE-2.0.txt"}},
+ com.google.code.gson/gson
+ {:mvn/version "2.8.5",
+  :deps/manifest :mvn,
+  :dependents [io.sentry/sentry],
+  :parents #{[io.sentry/sentry-clj io.sentry/sentry]},
+  :paths
+  ["/home/practicalli/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar"],
+  :license
+  {:name "Apache 2.0",
+   :url "http://www.apache.org/licenses/LICENSE-2.0.txt"}},
+ commons-codec/commons-codec
+ {:mvn/version "1.15",
+  :deps/manifest :mvn,
+  :dependents [ring/ring-codec crypto-random/crypto-random],
+  :parents
+  #{[io.sentry/sentry-clj ring/ring-core ring/ring-codec]
+    [io.sentry/sentry-clj ring/ring-core crypto-random/crypto-random]},
+  :paths
+  ["/home/practicalli/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar"],
+  :license
+  {:name "Apache License, Version 2.0",
+   :url "https://www.apache.org/licenses/LICENSE-2.0.txt"}},
+ commons-fileupload/commons-fileupload
+ {:mvn/version "1.4",
+  :deps/manifest :mvn,
+  :dependents [ring/ring-core],
+  :parents #{[io.sentry/sentry-clj ring/ring-core]},
+  :paths
+  ["/home/practicalli/.m2/repository/commons-fileupload/commons-fileupload/1.4/commons-fileupload-1.4.jar"],
+  :license
+  {:name "Apache License, Version 2.0",
+   :url "https://www.apache.org/licenses/LICENSE-2.0.txt"}},
+ commons-io/commons-io
+ {:mvn/version "2.10.0",
+  :deps/manifest :mvn,
+  :dependents [ring/ring-core],
+  :parents #{[io.sentry/sentry-clj ring/ring-core]},
+  :paths
+  ["/home/practicalli/.m2/repository/commons-io/commons-io/2.10.0/commons-io-2.10.0.jar"],
+  :license
+  {:name "Apache License, Version 2.0",
+   :url "https://www.apache.org/licenses/LICENSE-2.0.txt"}},
+ crypto-equality/crypto-equality
+ {:mvn/version "1.0.0",
+  :deps/manifest :mvn,
+  :dependents [ring/ring-core],
+  :parents #{[io.sentry/sentry-clj ring/ring-core]},
+  :paths
+  ["/home/practicalli/.m2/repository/crypto-equality/crypto-equality/1.0.0/crypto-equality-1.0.0.jar"],
+  :license
+  {:name "Eclipse Public License",
+   :url "http://www.eclipse.org/legal/epl-v10.html"}},
+ crypto-random/crypto-random
+ {:mvn/version "1.2.1",
+  :deps/manifest :mvn,
+  :dependents [ring/ring-core],
+  :parents #{[io.sentry/sentry-clj ring/ring-core]},
+  :paths
+  ["/home/practicalli/.m2/repository/crypto-random/crypto-random/1.2.1/crypto-random-1.2.1.jar"],
+  :license
+  {:name "Eclipse Public License",
+   :url "http://www.eclipse.org/legal/epl-v10.html"}},
+ gloss/gloss
+ {:mvn/version "0.2.6",
+  :deps/manifest :mvn,
+  :parents #{[]},
+  :paths
+  ["/home/practicalli/.m2/repository/gloss/gloss/0.2.6/gloss-0.2.6.jar"],
+  :license
+  {:name "Eclipse Public License - v 1.0",
+   :url "http://www.eclipse.org/legal/epl-v10.html"}},
+ integrant/integrant
+ {:mvn/version "0.8.0",
+  :deps/manifest :mvn,
+  :parents #{[]},
+  :paths
+  ["/home/practicalli/.m2/repository/integrant/integrant/0.8.0/integrant-0.8.0.jar"],
+  :license
+  {:name "The MIT License",
+   :url "http://opensource.org/licenses/MIT"}},
+ io.aleph/dirigiste
+ {:mvn/version "1.0.0",
+  :deps/manifest :mvn,
+  :dependents [manifold/manifold],
+  :parents #{[aleph/aleph manifold/manifold]},
+  :paths
+  ["/home/practicalli/.m2/repository/io/aleph/dirigiste/1.0.0/dirigiste-1.0.0.jar"],
+  :license {:name "MIT License"}},
+ io.netty/netty-buffer
+ {:mvn/version "4.1.64.Final",
+  :deps/manifest :mvn,
+  :dependents
+  [io.netty/netty-handler-proxy
+   io.netty/netty-transport-native-epoll
+   io.netty/netty-handler
+   io.netty/netty-transport
+   io.netty/netty-codec
+   io.netty/netty-transport-native-unix-common
+   io.netty/netty-codec-http
+   io.netty/netty-codec-socks
+   io.netty/netty-resolver-dns
+   io.netty/netty-codec-dns],
+  :parents
+  #{[aleph/aleph io.netty/netty-handler-proxy]
+    [aleph/aleph io.netty/netty-transport-native-epoll]
+    [aleph/aleph io.netty/netty-handler]
+    [aleph/aleph io.netty/netty-transport]
+    [aleph/aleph io.netty/netty-codec]
+    [aleph/aleph
+     io.netty/netty-transport-native-epoll
+     io.netty/netty-transport-native-unix-common]
+    [aleph/aleph io.netty/netty-codec-http]
+    [aleph/aleph
+     io.netty/netty-handler-proxy
+     io.netty/netty-codec-socks]
+    [aleph/aleph io.netty/netty-resolver-dns]
+    [aleph/aleph
+     io.netty/netty-resolver-dns
+     io.netty/netty-codec-dns]},
+  :paths
+  ["/home/practicalli/.m2/repository/io/netty/netty-buffer/4.1.64.Final/netty-buffer-4.1.64.Final.jar"],
+  :license
+  {:name "Apache License, Version 2.0",
+   :url "https://www.apache.org/licenses/LICENSE-2.0"}},
+ io.netty/netty-codec
+ {:mvn/version "4.1.64.Final",
+  :deps/manifest :mvn,
+  :dependents
+  [io.netty/netty-handler-proxy
+   io.netty/netty-handler
+   io.netty/netty-codec-http
+   io.netty/netty-codec-socks
+   io.netty/netty-resolver-dns
+   aleph/aleph
+   io.netty/netty-codec-dns],
+  :parents
+  #{[aleph/aleph io.netty/netty-handler-proxy]
+    [aleph/aleph io.netty/netty-handler]
+    [aleph/aleph io.netty/netty-codec-http]
+    [aleph/aleph
+     io.netty/netty-handler-proxy
+     io.netty/netty-codec-socks]
+    [aleph/aleph io.netty/netty-resolver-dns]
+    [aleph/aleph]
+    [aleph/aleph
+     io.netty/netty-resolver-dns
+     io.netty/netty-codec-dns]},
+  :paths
+  ["/home/practicalli/.m2/repository/io/netty/netty-codec/4.1.64.Final/netty-codec-4.1.64.Final.jar"],
+  :license
+  {:name "Apache License, Version 2.0",
+   :url "https://www.apache.org/licenses/LICENSE-2.0"}},
+ io.netty/netty-codec-dns
+ {:mvn/version "4.1.64.Final",
+  :deps/manifest :mvn,
+  :dependents [io.netty/netty-resolver-dns],
+  :parents #{[aleph/aleph io.netty/netty-resolver-dns]},
+  :paths
+  ["/home/practicalli/.m2/repository/io/netty/netty-codec-dns/4.1.64.Final/netty-codec-dns-4.1.64.Final.jar"],
+  :license
+  {:name "Apache License, Version 2.0",
+   :url "https://www.apache.org/licenses/LICENSE-2.0"}},
+ io.netty/netty-codec-http
+ {:mvn/version "4.1.64.Final",
+  :deps/manifest :mvn,
+  :dependents [io.netty/netty-handler-proxy aleph/aleph],
+  :parents #{[aleph/aleph io.netty/netty-handler-proxy] [aleph/aleph]},
+  :paths
+  ["/home/practicalli/.m2/repository/io/netty/netty-codec-http/4.1.64.Final/netty-codec-http-4.1.64.Final.jar"],
+  :license
+  {:name "Apache License, Version 2.0",
+   :url "https://www.apache.org/licenses/LICENSE-2.0"}},
+ io.netty/netty-codec-socks
+ {:mvn/version "4.1.64.Final",
+  :deps/manifest :mvn,
+  :dependents [io.netty/netty-handler-proxy],
+  :parents #{[aleph/aleph io.netty/netty-handler-proxy]},
+  :paths
+  ["/home/practicalli/.m2/repository/io/netty/netty-codec-socks/4.1.64.Final/netty-codec-socks-4.1.64.Final.jar"],
+  :license
+  {:name "Apache License, Version 2.0",
+   :url "https://www.apache.org/licenses/LICENSE-2.0"}},
+ io.netty/netty-common
+ {:mvn/version "4.1.64.Final",
+  :deps/manifest :mvn,
+  :dependents
+  [io.netty/netty-handler-proxy
+   io.netty/netty-transport-native-epoll
+   io.netty/netty-handler
+   io.netty/netty-buffer
+   io.netty/netty-transport
+   io.netty/netty-codec
+   io.netty/netty-transport-native-unix-common
+   io.netty/netty-codec-http
+   io.netty/netty-codec-socks
+   io.netty/netty-resolver-dns
+   io.netty/netty-codec-dns
+   io.netty/netty-resolver],
+  :parents
+  #{[aleph/aleph io.netty/netty-handler-proxy]
+    [aleph/aleph io.netty/netty-transport-native-epoll]
+    [aleph/aleph io.netty/netty-handler]
+    [aleph/aleph io.netty/netty-transport io.netty/netty-buffer]
+    [aleph/aleph io.netty/netty-transport]
+    [aleph/aleph io.netty/netty-codec]
+    [aleph/aleph
+     io.netty/netty-transport-native-epoll
+     io.netty/netty-transport-native-unix-common]
+    [aleph/aleph io.netty/netty-codec-http]
+    [aleph/aleph
+     io.netty/netty-handler-proxy
+     io.netty/netty-codec-socks]
+    [aleph/aleph io.netty/netty-resolver-dns]
+    [aleph/aleph io.netty/netty-resolver-dns io.netty/netty-codec-dns]
+    [aleph/aleph io.netty/netty-resolver]},
+  :paths
+  ["/home/practicalli/.m2/repository/io/netty/netty-common/4.1.64.Final/netty-common-4.1.64.Final.jar"],
+  :license
+  {:name "Apache License, Version 2.0",
+   :url "https://www.apache.org/licenses/LICENSE-2.0"}},
+ io.netty/netty-handler
+ {:mvn/version "4.1.64.Final",
+  :deps/manifest :mvn,
+  :dependents
+  [io.netty/netty-codec-http io.netty/netty-resolver-dns aleph/aleph],
+  :parents
+  #{[aleph/aleph io.netty/netty-codec-http]
+    [aleph/aleph io.netty/netty-resolver-dns]
+    [aleph/aleph]},
+  :paths
+  ["/home/practicalli/.m2/repository/io/netty/netty-handler/4.1.64.Final/netty-handler-4.1.64.Final.jar"],
+  :license
+  {:name "Apache License, Version 2.0",
+   :url "https://www.apache.org/licenses/LICENSE-2.0"}},
+ io.netty/netty-handler-proxy
+ {:mvn/version "4.1.64.Final",
+  :deps/manifest :mvn,
+  :dependents [aleph/aleph],
+  :parents #{[aleph/aleph]},
+  :paths
+  ["/home/practicalli/.m2/repository/io/netty/netty-handler-proxy/4.1.64.Final/netty-handler-proxy-4.1.64.Final.jar"],
+  :license
+  {:name "Apache License, Version 2.0",
+   :url "https://www.apache.org/licenses/LICENSE-2.0"}},
+ io.netty/netty-resolver
+ {:mvn/version "4.1.64.Final",
+  :deps/manifest :mvn,
+  :dependents
+  [io.netty/netty-handler
+   io.netty/netty-transport
+   io.netty/netty-resolver-dns
+   aleph/aleph],
+  :parents
+  #{[aleph/aleph io.netty/netty-handler]
+    [aleph/aleph io.netty/netty-transport]
+    [aleph/aleph io.netty/netty-resolver-dns]
+    [aleph/aleph]},
+  :paths
+  ["/home/practicalli/.m2/repository/io/netty/netty-resolver/4.1.64.Final/netty-resolver-4.1.64.Final.jar"],
+  :license
+  {:name "Apache License, Version 2.0",
+   :url "https://www.apache.org/licenses/LICENSE-2.0"}},
+ io.netty/netty-resolver-dns
+ {:mvn/version "4.1.64.Final",
+  :deps/manifest :mvn,
+  :dependents [aleph/aleph],
+  :parents #{[aleph/aleph]},
+  :paths
+  ["/home/practicalli/.m2/repository/io/netty/netty-resolver-dns/4.1.64.Final/netty-resolver-dns-4.1.64.Final.jar"],
+  :license
+  {:name "Apache License, Version 2.0",
+   :url "https://www.apache.org/licenses/LICENSE-2.0"}},
+ io.netty/netty-transport
+ {:mvn/version "4.1.64.Final",
+  :deps/manifest :mvn,
+  :dependents
+  [io.netty/netty-handler-proxy
+   io.netty/netty-transport-native-epoll
+   io.netty/netty-handler
+   io.netty/netty-codec
+   io.netty/netty-transport-native-unix-common
+   io.netty/netty-codec-http
+   io.netty/netty-codec-socks
+   io.netty/netty-resolver-dns
+   aleph/aleph
+   io.netty/netty-codec-dns],
+  :parents
+  #{[aleph/aleph io.netty/netty-handler-proxy]
+    [aleph/aleph io.netty/netty-transport-native-epoll]
+    [aleph/aleph io.netty/netty-handler]
+    [aleph/aleph io.netty/netty-codec]
+    [aleph/aleph
+     io.netty/netty-transport-native-epoll
+     io.netty/netty-transport-native-unix-common]
+    [aleph/aleph io.netty/netty-codec-http]
+    [aleph/aleph
+     io.netty/netty-handler-proxy
+     io.netty/netty-codec-socks]
+    [aleph/aleph io.netty/netty-resolver-dns]
+    [aleph/aleph]
+    [aleph/aleph
+     io.netty/netty-resolver-dns
+     io.netty/netty-codec-dns]},
+  :paths
+  ["/home/practicalli/.m2/repository/io/netty/netty-transport/4.1.64.Final/netty-transport-4.1.64.Final.jar"],
+  :license
+  {:name "Apache License, Version 2.0",
+   :url "https://www.apache.org/licenses/LICENSE-2.0"}},
+ io.netty/netty-transport-native-epoll
+ {:mvn/version "4.1.64.Final",
+  :deps/manifest :mvn,
+  :dependents [aleph/aleph],
+  :parents #{[aleph/aleph]},
+  :paths
+  ["/home/practicalli/.m2/repository/io/netty/netty-transport-native-epoll/4.1.64.Final/netty-transport-native-epoll-4.1.64.Final.jar"],
+  :license
+  {:name "Apache License, Version 2.0",
+   :url "https://www.apache.org/licenses/LICENSE-2.0"}},
+ io.netty/netty-transport-native-unix-common
+ {:mvn/version "4.1.64.Final",
+  :deps/manifest :mvn,
+  :dependents [io.netty/netty-transport-native-epoll],
+  :parents #{[aleph/aleph io.netty/netty-transport-native-epoll]},
+  :paths
+  ["/home/practicalli/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.64.Final/netty-transport-native-unix-common-4.1.64.Final.jar"],
+  :license
+  {:name "Apache License, Version 2.0",
+   :url "https://www.apache.org/licenses/LICENSE-2.0"}},
+ io.sentry/sentry
+ {:mvn/version "5.3.0",
+  :deps/manifest :mvn,
+  :dependents [io.sentry/sentry-clj],
+  :parents #{[io.sentry/sentry-clj]},
+  :paths
+  ["/home/practicalli/.m2/repository/io/sentry/sentry/5.3.0/sentry-5.3.0.jar"],
+  :license
+  {:name "MIT",
+   :url "http://www.opensource.org/licenses/mit-license.php"}},
+ io.sentry/sentry-clj
+ {:mvn/version "5.3.159",
+  :deps/manifest :mvn,
+  :parents #{[]},
+  :paths
+  ["/home/practicalli/.m2/repository/io/sentry/sentry-clj/5.3.159/sentry-clj-5.3.159.jar"],
+  :license
+  {:name "Eclipse Public License",
+   :url "http://www.eclipse.org/legal/epl-v10.html"}},
+ manifold/manifold
+ {:mvn/version "0.1.9",
+  :deps/manifest :mvn,
+  :dependents [org.clj-commons/byte-streams aleph/aleph],
+  :parents #{[aleph/aleph org.clj-commons/byte-streams] [aleph/aleph]},
+  :paths
+  ["/home/practicalli/.m2/repository/manifold/manifold/0.1.9/manifold-0.1.9.jar"],
+  :license
+  {:name "MIT License", :url "http://opensource.org/licenses/MIT"}},
+ org.clj-commons/byte-streams
+ {:mvn/version "0.2.10",
+  :deps/manifest :mvn,
+  :dependents [aleph/aleph],
+  :parents #{[aleph/aleph]},
+  :paths
+  ["/home/practicalli/.m2/repository/org/clj-commons/byte-streams/0.2.10/byte-streams-0.2.10.jar"],
+  :license
+  {:name "MIT License", :url "http://opensource.org/licenses/MIT"}},
+ org.clojure/clojure
+ {:mvn/version "1.10.3",
+  :deps/manifest :mvn,
+  :parents #{[]},
+  :paths
+  ["/home/practicalli/.m2/repository/org/clojure/clojure/1.10.3/clojure-1.10.3.jar"],
+  :license
+  {:name "Eclipse Public License 1.0",
+   :url "http://opensource.org/licenses/eclipse-1.0.php"}},
+ org.clojure/core.cache
+ {:mvn/version "1.0.217",
+  :deps/manifest :mvn,
+  :parents #{[]},
+  :paths
+  ["/home/practicalli/.m2/repository/org/clojure/core.cache/1.0.217/core.cache-1.0.217.jar"],
+  :license
+  {:name "Eclipse Public License 1.0",
+   :url "http://opensource.org/licenses/eclipse-1.0.php"}},
+ org.clojure/core.specs.alpha
+ {:mvn/version "0.2.56",
+  :deps/manifest :mvn,
+  :dependents [org.clojure/clojure],
+  :parents #{[org.clojure/clojure]},
+  :paths
+  ["/home/practicalli/.m2/repository/org/clojure/core.specs.alpha/0.2.56/core.specs.alpha-0.2.56.jar"],
+  :license
+  {:name "Eclipse Public License 1.0",
+   :url "http://opensource.org/licenses/eclipse-1.0.php"}},
+ org.clojure/data.codec
+ {:mvn/version "0.1.0",
+  :deps/manifest :mvn,
+  :dependents [org.clojure/data.xml],
+  :parents #{[org.clojure/data.xml]},
+  :paths
+  ["/home/practicalli/.m2/repository/org/clojure/data.codec/0.1.0/data.codec-0.1.0.jar"],
+  :license
+  {:name "Eclipse Public License 1.0",
+   :url "http://opensource.org/licenses/eclipse-1.0.php"}},
+ org.clojure/data.priority-map
+ {:mvn/version "1.0.0",
+  :deps/manifest :mvn,
+  :dependents [org.clojure/core.cache],
+  :parents #{[org.clojure/core.cache]},
+  :paths
+  ["/home/practicalli/.m2/repository/org/clojure/data.priority-map/1.0.0/data.priority-map-1.0.0.jar"],
+  :license
+  {:name "Eclipse Public License 1.0",
+   :url "http://opensource.org/licenses/eclipse-1.0.php"}},
+ org.clojure/data.xml
+ {:mvn/version "0.2.0-alpha6",
+  :deps/manifest :mvn,
+  :parents #{[]},
+  :paths
+  ["/home/practicalli/.m2/repository/org/clojure/data.xml/0.2.0-alpha6/data.xml-0.2.0-alpha6.jar"],
+  :license
+  {:name "Eclipse Public License 1.0",
+   :url "http://opensource.org/licenses/eclipse-1.0.php"}},
+ org.clojure/spec.alpha
+ {:mvn/version "0.2.194",
+  :deps/manifest :mvn,
+  :parents #{[]},
+  :paths
+  ["/home/practicalli/.m2/repository/org/clojure/spec.alpha/0.2.194/spec.alpha-0.2.194.jar"],
+  :license
+  {:name "Eclipse Public License 1.0",
+   :url "http://opensource.org/licenses/eclipse-1.0.php"}},
+ org.clojure/tools.logging
+ {:mvn/version "1.1.0",
+  :exclusions #{org.clojure/clojure},
+  :deps/manifest :mvn,
+  :dependents [aleph/aleph manifold/manifold],
+  :parents #{[aleph/aleph] [aleph/aleph manifold/manifold]},
+  :paths
+  ["/home/practicalli/.m2/repository/org/clojure/tools.logging/1.1.0/tools.logging-1.1.0.jar"],
+  :license
+  {:name "Eclipse Public License 1.0",
+   :url "http://opensource.org/licenses/eclipse-1.0.php"}},
+ org.controlsfx/controlsfx
+ {:mvn/version "11.1.0",
+  :deps/manifest :mvn,
+  :parents #{[]},
+  :paths
+  ["/home/practicalli/.m2/repository/org/controlsfx/controlsfx/11.1.0/controlsfx-11.1.0.jar"],
+  :license
+  {:name "The 3-Clause BSD License",
+   :url "http://www.opensource.org/licenses/bsd-license.php"}},
+ org.openjfx/javafx-base
+ {:mvn/version "17.0.0.1",
+  :deps/manifest :mvn,
+  :dependents
+  [cljfx/cljfx$jdk11
+   org.openjfx/javafx-graphics$linux
+   org.openjfx/javafx-graphics
+   cljfx/cljfx],
+  :parents
+  #{[cljfx/cljfx cljfx/cljfx$jdk11]
+    [cljfx/cljfx
+     org.openjfx/javafx-graphics
+     org.openjfx/javafx-graphics$linux]
+    [cljfx/cljfx org.openjfx/javafx-graphics]
+    [cljfx/cljfx]},
+  :paths
+  ["/home/practicalli/.m2/repository/org/openjfx/javafx-base/17.0.0.1/javafx-base-17.0.0.1.jar"],
+  :license
+  {:name "GPLv2+CE",
+   :url "https://openjdk.java.net/legal/gplv2+ce.html"}},
+ org.openjfx/javafx-base$linux
+ {:mvn/version "17.0.0.1",
+  :deps/manifest :mvn,
+  :dependents [org.openjfx/javafx-base$linux org.openjfx/javafx-base],
+  :parents
+  #{[cljfx/cljfx org.openjfx/javafx-base org.openjfx/javafx-base$linux]
+    [cljfx/cljfx org.openjfx/javafx-base]},
+  :paths
+  ["/home/practicalli/.m2/repository/org/openjfx/javafx-base/17.0.0.1/javafx-base-17.0.0.1-linux.jar"],
+  :license
+  {:name "GPLv2+CE",
+   :url "https://openjdk.java.net/legal/gplv2+ce.html"}},
+ org.openjfx/javafx-controls
+ {:mvn/version "17.0.0.1",
+  :deps/manifest :mvn,
+  :dependents
+  [org.openjfx/javafx-web$linux
+   cljfx/cljfx$jdk11
+   org.openjfx/javafx-web
+   cljfx/cljfx],
+  :parents
+  #{[cljfx/cljfx org.openjfx/javafx-web org.openjfx/javafx-web$linux]
+    [cljfx/cljfx cljfx/cljfx$jdk11]
+    [cljfx/cljfx org.openjfx/javafx-web]
+    [cljfx/cljfx]},
+  :paths
+  ["/home/practicalli/.m2/repository/org/openjfx/javafx-controls/17.0.0.1/javafx-controls-17.0.0.1.jar"],
+  :license
+  {:name "GPLv2+CE",
+   :url "https://openjdk.java.net/legal/gplv2+ce.html"}},
+ org.openjfx/javafx-controls$linux
+ {:mvn/version "17.0.0.1",
+  :deps/manifest :mvn,
+  :dependents
+  [org.openjfx/javafx-controls org.openjfx/javafx-controls$linux],
+  :parents
+  #{[cljfx/cljfx org.openjfx/javafx-controls]
+    [cljfx/cljfx
+     org.openjfx/javafx-controls
+     org.openjfx/javafx-controls$linux]},
+  :paths
+  ["/home/practicalli/.m2/repository/org/openjfx/javafx-controls/17.0.0.1/javafx-controls-17.0.0.1-linux.jar"],
+  :license
+  {:name "GPLv2+CE",
+   :url "https://openjdk.java.net/legal/gplv2+ce.html"}},
+ org.openjfx/javafx-graphics
+ {:mvn/version "17.0.0.1",
+  :deps/manifest :mvn,
+  :dependents
+  [cljfx/cljfx$jdk11
+   org.openjfx/javafx-controls
+   org.openjfx/javafx-media$linux
+   org.openjfx/javafx-controls$linux
+   org.openjfx/javafx-media
+   cljfx/cljfx],
+  :parents
+  #{[cljfx/cljfx cljfx/cljfx$jdk11]
+    [cljfx/cljfx org.openjfx/javafx-controls]
+    [cljfx/cljfx
+     org.openjfx/javafx-media
+     org.openjfx/javafx-media$linux]
+    [cljfx/cljfx
+     org.openjfx/javafx-controls
+     org.openjfx/javafx-controls$linux]
+    [cljfx/cljfx org.openjfx/javafx-media]
+    [cljfx/cljfx]},
+  :paths
+  ["/home/practicalli/.m2/repository/org/openjfx/javafx-graphics/17.0.0.1/javafx-graphics-17.0.0.1.jar"],
+  :license
+  {:name "GPLv2+CE",
+   :url "https://openjdk.java.net/legal/gplv2+ce.html"}},
+ org.openjfx/javafx-graphics$linux
+ {:mvn/version "17.0.0.1",
+  :deps/manifest :mvn,
+  :dependents
+  [org.openjfx/javafx-graphics$linux org.openjfx/javafx-graphics],
+  :parents
+  #{[cljfx/cljfx
+     org.openjfx/javafx-graphics
+     org.openjfx/javafx-graphics$linux]
+    [cljfx/cljfx org.openjfx/javafx-graphics]},
+  :paths
+  ["/home/practicalli/.m2/repository/org/openjfx/javafx-graphics/17.0.0.1/javafx-graphics-17.0.0.1-linux.jar"],
+  :license
+  {:name "GPLv2+CE",
+   :url "https://openjdk.java.net/legal/gplv2+ce.html"}},
+ org.openjfx/javafx-media
+ {:mvn/version "17.0.0.1",
+  :deps/manifest :mvn,
+  :dependents
+  [org.openjfx/javafx-web$linux
+   cljfx/cljfx$jdk11
+   org.openjfx/javafx-web
+   cljfx/cljfx],
+  :parents
+  #{[cljfx/cljfx org.openjfx/javafx-web org.openjfx/javafx-web$linux]
+    [cljfx/cljfx cljfx/cljfx$jdk11]
+    [cljfx/cljfx org.openjfx/javafx-web]
+    [cljfx/cljfx]},
+  :paths
+  ["/home/practicalli/.m2/repository/org/openjfx/javafx-media/17.0.0.1/javafx-media-17.0.0.1.jar"],
+  :license
+  {:name "GPLv2+CE",
+   :url "https://openjdk.java.net/legal/gplv2+ce.html"}},
+ org.openjfx/javafx-media$linux
+ {:mvn/version "17.0.0.1",
+  :deps/manifest :mvn,
+  :dependents
+  [org.openjfx/javafx-media$linux org.openjfx/javafx-media],
+  :parents
+  #{[cljfx/cljfx
+     org.openjfx/javafx-media
+     org.openjfx/javafx-media$linux]
+    [cljfx/cljfx org.openjfx/javafx-media]},
+  :paths
+  ["/home/practicalli/.m2/repository/org/openjfx/javafx-media/17.0.0.1/javafx-media-17.0.0.1-linux.jar"],
+  :license
+  {:name "GPLv2+CE",
+   :url "https://openjdk.java.net/legal/gplv2+ce.html"}},
+ org.openjfx/javafx-web
+ {:mvn/version "17.0.0.1",
+  :deps/manifest :mvn,
+  :dependents [cljfx/cljfx$jdk11 cljfx/cljfx],
+  :parents #{[cljfx/cljfx cljfx/cljfx$jdk11] [cljfx/cljfx]},
+  :paths
+  ["/home/practicalli/.m2/repository/org/openjfx/javafx-web/17.0.0.1/javafx-web-17.0.0.1.jar"],
+  :license
+  {:name "GPLv2+CE",
+   :url "https://openjdk.java.net/legal/gplv2+ce.html"}},
+ org.openjfx/javafx-web$linux
+ {:mvn/version "17.0.0.1",
+  :deps/manifest :mvn,
+  :dependents [org.openjfx/javafx-web$linux org.openjfx/javafx-web],
+  :parents
+  #{[cljfx/cljfx org.openjfx/javafx-web org.openjfx/javafx-web$linux]
+    [cljfx/cljfx org.openjfx/javafx-web]},
+  :paths
+  ["/home/practicalli/.m2/repository/org/openjfx/javafx-web/17.0.0.1/javafx-web-17.0.0.1-linux.jar"],
+  :license
+  {:name "GPLv2+CE",
+   :url "https://openjdk.java.net/legal/gplv2+ce.html"}},
+ org.slf4j/slf4j-api
+ {:mvn/version "1.7.32",
+  :deps/manifest :mvn,
+  :parents #{[]},
+  :paths
+  ["/home/practicalli/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar"],
+  :license
+  {:name "MIT License",
+   :url "http://www.opensource.org/licenses/mit-license.php"}},
+ org.slf4j/slf4j-simple
+ {:mvn/version "1.7.32",
+  :deps/manifest :mvn,
+  :parents #{[]},
+  :paths
+  ["/home/practicalli/.m2/repository/org/slf4j/slf4j-simple/1.7.32/slf4j-simple-1.7.32.jar"],
+  :license
+  {:name "MIT License",
+   :url "http://www.opensource.org/licenses/mit-license.php"}},
+ potemkin/potemkin
+ {:mvn/version "0.4.5",
+  :deps/manifest :mvn,
+  :dependents [aleph/aleph],
+  :parents #{[aleph/aleph]},
+  :paths
+  ["/home/practicalli/.m2/repository/potemkin/potemkin/0.4.5/potemkin-0.4.5.jar"],
+  :license {:name "MIT License"}},
+ primitive-math/primitive-math
+ {:mvn/version "0.1.6",
+  :deps/manifest :mvn,
+  :parents #{[]},
+  :paths
+  ["/home/practicalli/.m2/repository/primitive-math/primitive-math/0.1.6/primitive-math-0.1.6.jar"],
+  :license
+  {:name "MIT License", :url "http://opensource.org/licenses/MIT"}},
+ riddley/riddley
+ {:mvn/version "0.1.15",
+  :deps/manifest :mvn,
+  :dependents [manifold/manifold],
+  :parents #{[aleph/aleph manifold/manifold]},
+  :paths
+  ["/home/practicalli/.m2/repository/riddley/riddley/0.1.15/riddley-0.1.15.jar"],
+  :license
+  {:name "MIT License", :url "http://opensource.org/licenses/MIT"}},
+ ring/ring-codec
+ {:mvn/version "1.1.3",
+  :deps/manifest :mvn,
+  :dependents [ring/ring-core],
+  :parents #{[io.sentry/sentry-clj ring/ring-core]},
+  :paths
+  ["/home/practicalli/.m2/repository/ring/ring-codec/1.1.3/ring-codec-1.1.3.jar"],
+  :license
+  {:name "The MIT License",
+   :url "http://opensource.org/licenses/MIT"}},
+ ring/ring-core
+ {:mvn/version "1.9.4",
+  :deps/manifest :mvn,
+  :dependents [io.sentry/sentry-clj],
+  :parents #{[io.sentry/sentry-clj]},
+  :paths
+  ["/home/practicalli/.m2/repository/ring/ring-core/1.9.4/ring-core-1.9.4.jar"],
+  :license
+  {:name "The MIT License",
+   :url "http://opensource.org/licenses/MIT"}},
+ tigris/tigris
+ {:mvn/version "0.1.2",
+  :deps/manifest :mvn,
+  :dependents [cheshire/cheshire],
+  :parents #{[cheshire/cheshire]},
+  :paths
+  ["/home/practicalli/.m2/repository/tigris/tigris/0.1.2/tigris-0.1.2.jar"],
+  :license
+  {:name "Eclipse Public License",
+   :url "http://www.eclipse.org/legal/epl-v10.html"}},
+ weavejester/dependency
+ {:mvn/version "0.2.1",
+  :deps/manifest :mvn,
+  :dependents [integrant/integrant],
+  :parents #{[integrant/integrant]},
+  :paths
+  ["/home/practicalli/.m2/repository/weavejester/dependency/0.2.1/dependency-0.2.1.jar"],
+  :license
+  {:name "Eclipse Public License",
+   :url "http://www.eclipse.org/legal/epl-v10.html"}}}
