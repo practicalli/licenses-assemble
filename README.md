@@ -1,4 +1,4 @@
-# practicalli/licenses-assemble
+# ARCHIVED: licenses-assemble
 
 When distributing software it is a legal requirement to also distribute the licenses for that software.  Licenses Assemble checks the licenses of project dependencies (via clojure.tools....) and
 
